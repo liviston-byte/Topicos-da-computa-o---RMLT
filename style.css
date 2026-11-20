@@ -1,0 +1,111 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+/* Conteúdo principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    flex: 1;
+}
+
+.task-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Lista de tarefas */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.task {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.task-info h3 {
+    margin-bottom: 8px;
+}
+
+.task-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Status das tarefas */
+.status {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.completed {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
